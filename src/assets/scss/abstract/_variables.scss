@@ -1,0 +1,41 @@
+//color pallete
+$indigo: #3b65c5;
+$bay-of-many: #29478a;
+$brink-pink: #fb607f;
+$mandy: #e44a78;
+$white: #ffffff;
+$wild-sand: #f7f6f6;
+$black-150: rgba(0, 0, 0, 0.15);
+$ship-gray: #434344;
+$zeus: #1e1b18;
+
+//color purpose
+$color-primary: $indigo;
+$color-secondary: $brink-pink;
+$color-on-primary: $white;
+$color-on-secondary: $white;
+$color-hover-primary: $bay-of-many;
+$color-hover-secondary: $mandy;
+
+$color-bg: $white;
+$color-bg-shade: $wild-sand;
+$color-bg-dark: $zeus;
+$color-on-bg-dark: $white;
+$color-text: $ship-gray;
+$color-shadow: $black-150;
+
+//font sizes
+$font-sm: 0.875rem;
+$font-def: 1rem;
+$font-md: 1.125rem;
+$font-xmd: 1.375rem;
+$font-xxmd: 1.5rem;
+$font-lg: 2rem;
+$font-xlg: 3rem;
+
+//breakpoints map
+$breakpoints: (
+  mobile: 34.75em,
+  tablet: 48em,
+  laptop: 62.25em,
+);

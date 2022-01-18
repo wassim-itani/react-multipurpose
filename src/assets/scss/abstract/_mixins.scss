@@ -1,0 +1,12 @@
+@mixin grid($col, $gap, $auto-rows: "auto") {
+  display: grid;
+  grid-template-columns: repeat($col, 1fr);
+  grid-auto-rows: $auto-rows;
+  gap: $gap;
+}
+
+@mixin breakpoint($size) {
+  @media only screen and (max-width: map-get($breakpoints,$size)) {
+    @content;
+  }
+}

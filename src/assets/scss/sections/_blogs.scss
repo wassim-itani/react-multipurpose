@@ -1,0 +1,16 @@
+.blogs {
+  padding: 3rem 0;
+  background-color: $color-bg;
+
+  &__grid {
+    @include grid(3, 25px, 1fr);
+    @include breakpoint(tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .btn__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}

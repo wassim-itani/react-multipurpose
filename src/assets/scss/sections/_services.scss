@@ -1,0 +1,36 @@
+.services {
+  padding: 3rem 0;
+  background-color: $color-bg;
+
+  &__grid {
+    @include grid(2, 30px);
+    @include breakpoint(tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__img {
+    height: 20rem;
+    border-radius: 5px;
+    object-fit: cover;
+    @include breakpoint(mobile) {
+      height: 15rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    margin-top: 1.625rem;
+    align-items: flex-start;
+    &:first-of-type {
+      margin-top: 0;
+    }
+    svg {
+      font-size: 1.325rem;
+      fill: $color-primary;
+    }
+  }
+  &__text {
+    margin-left: 0.5rem;
+  }
+}

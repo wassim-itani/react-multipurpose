@@ -1,0 +1,40 @@
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2.325rem 1.25rem;
+  background-color: $color-bg;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px 0px $color-shadow;
+  transition: 0.15s ease-in-out;
+
+  &:hover {
+    box-shadow: 2px 2px 4px 0px $color-primary;
+  }
+
+  svg {
+    font-size: 1.625rem;
+    fill: $color-secondary;
+  }
+
+  &__quote {
+    flex: 1;
+    margin-top: 1rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-top: 1rem;
+  }
+
+  &__quotee {
+    color: $color-primary;
+    font-size: $font-xmd;
+    font-weight: 700;
+  }
+
+  &__position {
+    align-self: flex-end;
+  }
+}

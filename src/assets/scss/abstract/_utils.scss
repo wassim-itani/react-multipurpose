@@ -1,0 +1,11 @@
+.container {
+  max-width: 73.75rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1.625rem;
+  overflow-x: hidden;
+
+  @include breakpoint(laptop) {
+    padding: 0 1.625rem;
+  }
+}

@@ -1,0 +1,23 @@
+.subheading {
+  position: relative;
+  z-index: 3;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 3rem;
+    width: 2.825rem;
+    height: 0.25rem;
+    background-color: $color-secondary;
+    @include breakpoint(tablet) {
+      top: 2.325rem;
+    }
+  }
+
+  &--center {
+    text-align: center;
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

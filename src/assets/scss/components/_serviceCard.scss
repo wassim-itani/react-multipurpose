@@ -1,0 +1,30 @@
+.service-card {
+  padding: 1.325rem;
+  background-color: $color-bg;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px 0px $color-shadow;
+  transition: 0.15s ease-in-out;
+
+  &:hover {
+    box-shadow: 2px 2px 4px 0px $color-secondary;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: $color-secondary;
+    border-radius: 5px;
+
+    svg {
+      font-size: 1.625rem;
+      fill: $color-on-secondary;
+    }
+  }
+
+  &__title {
+    margin-top: 1.325rem;
+  }
+}

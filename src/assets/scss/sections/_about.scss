@@ -1,0 +1,28 @@
+.about {
+  padding: 3rem 0;
+  background-color: $color-bg-shade;
+
+  &__container {
+    @include grid(2, 30px);
+    @include breakpoint(laptop) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__text {
+    max-width: 50rem;
+    margin-top: 2rem;
+    &:last-of-type {
+      margin-top: 1rem;
+    }
+  }
+
+  &__right {
+    @include grid(2, 25px);
+    grid-auto-rows: 1fr;
+    margin-bottom: 1rem;
+    @include breakpoint(mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

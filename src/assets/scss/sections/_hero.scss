@@ -1,0 +1,38 @@
+.hero {
+  padding: 3rem 0;
+  background: $color-bg;
+
+  &__container {
+    @include grid(2, 30px);
+    @include breakpoint(laptop) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__text {
+    max-width: 50rem;
+    margin-top: 1.625rem;
+    font-size: $font-xmd;
+    @include breakpoint(tablet) {
+      font-size: $font-md;
+    }
+  }
+
+  &__btn-container {
+    margin-top: 2rem;
+
+    .btn:last-of-type {
+      margin-left: 1rem;
+    }
+  }
+
+  &__img {
+    height: 28rem;
+    @include breakpoint(laptop) {
+      height: 20rem;
+    }
+    @include breakpoint(mobile) {
+      height: 15rem;
+    }
+  }
+}

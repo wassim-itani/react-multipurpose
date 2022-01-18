@@ -1,0 +1,11 @@
+.testimonials {
+  padding: 3rem 0;
+  background: $color-bg-shade;
+  &__grid {
+    @include grid(3, 25px, 1fr);
+    margin-bottom: 1rem;
+    @include breakpoint(tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

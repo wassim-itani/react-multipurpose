@@ -1,0 +1,25 @@
+//abstract
+@import "abstract/variables";
+@import "abstract/mixins";
+@import "abstract/utils";
+
+//base
+@import "base/reset";
+@import "base/typography";
+
+//components
+@import "components/brand";
+@import "components/button";
+@import "components/navbar";
+@import "components/subheading";
+@import "components/subText";
+@import "components/serviceCard";
+@import "components/testimonialCard";
+@import "components/blogCard";
+@import "components/footer";
+//sections
+@import "sections/hero";
+@import "sections/about";
+@import "sections/services";
+@import "sections/testimonials";
+@import "sections/blogs";
